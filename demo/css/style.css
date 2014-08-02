@@ -28,11 +28,32 @@
     height: 128px;
 }
 #scrollSlider .thumbnails .thumb{
+    position: relative;
     height: 138px;
     width: 138px;
     overflow: hidden;
     border: 1px solid black;
     margin: 10px 0 10px 0;
+}
+#scrollSlider .thumb .thumb-shadow{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #131313;
+    opacity: 0;
+}
+#scrollSlider .thumb .thumb-shadow span{
+    width: 32px;
+    height: 32px;
+    background: url("../img/zoom.png") no-repeat 0 0;
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+}
+#scrollSlider .thumb .thumb-shadow:hover{
+    opacity: 0.5;
 }
 #scrollSlider .scroll-bar{
     width: 10px;
